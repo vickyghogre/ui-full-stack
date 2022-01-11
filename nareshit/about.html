@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us</title>
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../../fontawesome/css/all.css">
+        
+        <style>
+             h2{
+                  text-align: center;
+                 }
+            #footer{
+                background-color: rgb(24, 20, 20);
+                color: whitesmoke;
+            }
+            a{
+                text-decoration: none;
+                color: whitesmoke;
+            } 
+            #nav{
+                justify-content: space-between;
+            }  
+        </style>
+    </head>
+    <body class="container-fluid">
+        <h2 style="text-align: center; padding: 25px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Naresh Institute and Technologies</h2>
+       <div>
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark mt-5" style="border-radius: 5px;">
+            <div class="container-fluid" style="margin-left: 40px;">
+               <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menulist" >
+                   <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div class="collapse navbar-collapse" id="nav">
+                  <div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                             <a class="nav-link" href="home.html"><span class="fas fa-home"></span> home</a>
+                        </li>
+                        <li class="nav-item">
+                            
+                           <a class="nav-link" href="about.html"><span class="far fa-question-circle"></span> About</a>
+                        </li>
+                        <li class="nav-item">
+                            
+                            <a class="nav-link" href="service.html"><span class="far fa-question-circle"></span> Service</a>
+                        </li>
+                        <li class="nav-item">
+                            
+                            <a class="nav-link" href="contact.html"><span class="fas fa-mobile-alt"></span> Contact us</a>
+                        </li>
+                    </ul>
+                  </div>
+                       <div>
+                           <ul class="navbar-nav ">
+                            <li class="nav-item dropdown g-5"> 
+                                <a class="nav-link dropdown-toggle" aria-expanded="true" href="#" id="" data-bs-toggle="dropdown"><i class="fa fa-sign-in p-1"></i>Sign in</a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                      <li class="dropdown-item">
+                                          <a class="dropdown-link nav-link text-dark" href="signin.html"><span class="fas fa-sign-in-alt"></span>Sign IN</a>
+                                      </li>
+                                      <li class="dropdown-item">
+                                             <a class="dropdown-link nav-link text-dark" href="signup.html"><span class="fas fa-user-plus"></span>sign UP</a>
+                                      </li>
+                                      <li class="dropdown-item">
+                                          <a class="dropdown-link nav-link text-dark" href="chang.html"><span class="fas fa-unlock"></span>change password</a>
+                                      </li>
+                                </ul>
+                              </li>
+                           </ul>
+                       </div>
+             
+                 </div>
+            </div>
+           </nav>
+       </div>
+           <!--about-->
+           <div class="container-fluid p-5">
+            <div style="border: 1px solid rgb(71, 71, 252);">
+                <h2 class="bg-primary">Details</h2>
+             <div class="w-100% m-4">
+               <table border="1" class="table table-striped table-hover table-bordered mt-5">
+               <thead class="bg-dark bg-opacity-50 text-dark">
+                   <th>ID</th>
+                   <th>Course Name</th>
+                   <th>Faculty Name</th>
+                   <th>Duration</th>
+                   <th>timing</th>
+                   <th>View</th>
+               </thead>
+               <tbody>
+                  <tr> 
+                      <td>1</td>
+                      <td>Angular</td>
+                      <td>Sudhakar Sharma Sir</td>
+                      <td>45 days</td>
+                      <td>07.30 AM</td>
+                  <td>
+                      <button type="button" class="viewmodal btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#viewmodal">view<span class="bi bi-eye "></span></button>
+                     <div class="modal fade" id="viewmodal">
+                        <div class="modal-dialog  modal-dialog-scrollable">
+                            <div class="modal-content" >
+                                <div class="modal-header">
+                                   <h2 class="modal-title">Details:</h2>
+                                   <button class="btn-close" data-bs-dismiss="modal"></button>
+                                   </div>
+                                   <div class="modal-body">
+                                   <div> 
+                                       <div class="row">
+                                           <div class="col text-info"><strong>Course :</strong></div>
+                                           <div class="col">Angular 8</div>
+                                       </div>
+                                       <div class="row">
+                                           <div class="col text-info"><strong>Faculty :</strong></div>
+                                           <div class="col">Sudhakar Sharma</div>
+                                       </div>
+                                       <div class="row">
+                                           <div class="col text-info"><strong>Duration :</strong></div>
+                                           <div class="col">45 days</div>
+                                       </div>
+                                       <div class="row">
+                                           <div class="col text-info"><strong>timing :</strong></div>
+                                           <div class="col">7.30 AM</div>
+                                       </div>
+                                       <div class="row">
+                                           <div class="col text-info"><strong>Description :</strong></div>
+                                           <div class="col"> Angular is client side typescript based framework which is used to create is dynamic web aplication. it is very similar to pevious version having some extensive features</div>
+                                       </div>
+                                      </div>                                       
+                                    </div>
+  
+                              <div class="modal-footer">
+                                       <button class="btn btn-warning" data-bs-dismiss ="modal">Close</button>
+                                   </div>
+                                   </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div>
+                   </td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>Node Js</td>
+                      <td>Samba Sir</td>
+                      <td>45 days</td>
+                      <td>9.00 AM</td>
+                  <td>
+                   <button type="button" class="view2 btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#view2">view<span class="bi bi-eye "></span></button>
+                  <div class="modal fade" id="view2">
+                     <div class="modal-dialog modal-dialog-scrollable">
+                         <div class="modal-content" >
+                             <div class="modal-header">
+                                <h2 class="modal-title">Details:</h2>
+                                <button class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                <div>
+                                    <div class="row 1">
+                                        <div class="col 2 text-info"><strong>Course :</strong></div>
+                                        <div class="col 2">Node js</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-info"><strong>Faculty :</strong></div>
+                                        <div class="col">Samba Sir</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-info"><strong>Duration :</strong></div>
+                                        <div class="col">45 days</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-info"><strong>timing :</strong></div>
+                                        <div class="col">9.00 AM</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-info"><strong>Description :</strong></div>
+                                        <div class="col"> Node Js connect the ease of a scripting langugae (JavaScript) with the power of unix network programming Node js was built on the Google V8 Jvascript engin since it was open-sourced under the BSD License</div>
+                                    </div>
+                                   </div>                                       
+                                 </div>
+                                 <div class="modal-footer">
+                                   <button class="btn btn-warning" data-bs-dismiss ="modal">Close</button>
+                               </div>
+                   
+                                </div>
+                         </div>
+                     </div>
+                  </div>
+                  <div>
+                  </tr>
+                  <tr>
+                      <td>3</td>
+                      <td>Java</td>
+                      <td>Hari Krishna Sir</td>
+                      <td>60 days</td>
+                      <td>4.30 PM</td>
+                      <td>  <button type="button" class="view3 btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#view3">view<span class="bi bi-eye "></span></button></td>
+                      <div class="modal fade" id="view3">
+                       <div class="modal-dialog  modal-dialog-scrollable">
+                           <div class="modal-content" >
+                               <div class="modal-header">
+                                  <h2 class="modal-title">Details:</h2>
+                                  <button class="btn-close" data-bs-dismiss="modal"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                  <div>
+                                      
+                                      <div class="row">
+                                          <div class="col 2 text-info"><strong>Course :</strong></div>
+                                          <div class="col 2">Java</div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col text-info"><strong>Faculty :</strong></div>
+                                          <div class="col">Hari Krishna Sir</div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col text-info"><strong>Duration :</strong></div>
+                                          <div class="col">60 days</div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col text-info"><strong>timing :</strong></div>
+                                          <div class="col">4.30 PM</div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col text-info"><strong>Description :</strong></div>
+                                          <div class="col"> Java is an object-oriented progrmmming language developed by sun Microsystem, and it was released in 1995. ....Java Virtual Machin(JVM) executes Java code.but it has been written in platform-specific languages such as c/c++/ASM,etc.</div>
+                                      </div>
+                                     </div>                                       
+                                   </div>
+                                   <div class="modal-footer">
+                                       <button class="btn btn-warning" data-bs-dismiss ="modal">Close</button>
+                                   </div>
+                   </tr>
+              </tbody>
+           </table>
+            </div>
+          </div>
+       </div>
+           </div>
+           <!--footer-->
+       <div>
+        <div id="footer">
+            <h3><center>Naresh Technologies</center></h3>
+         <div class="row p-4">
+             <div class="col-lg">
+                 <ul >
+                     <li><a href="https://www.facebook.com/nareshit/" target="_blank"><span class="fab fa-facebook-f"></span>Facebook</a></li>
+                     <li><a href="https://nareshit.in/course-schedule/"target="_blank"><span class="fab fa-google"></span>Google</a></li>
+                     <li><a href="https://twitter.com/nareshitech?lang=en" target="_blank"><span class="fab fa-twitter"></span>Twitter</a></li>
+                     <li><a href="https://www.youtube.com/user/nareshtechnologies" target="_blank"><span class="fab fa-youtube"></span>You-tube</a></li>
+                 </ul>
+             </div>
+             <div class="col-lg">
+                 <ul style="text-decoration: none;">
+                     <li><a href="home.html">Home</a></li>
+                     <li><a href="about.html">About</a></li>
+                     <li><a href="service.html">Service</a></li>
+                     <li><a href="contact.html">Contactus</a></li>
+                 </ul>
+             </div>
+             <div class="col-lg">
+                 <ul >
+                     <li><a href=""></a>Name : Naresh Istitute</li>
+                     <li><a href=""></a>Email : info@nareshit.com</li>
+                     <li><a href=""></a>Contact : +91-xxxxxxxxxx</li>
+                     <li><a href=""></a>Address : Sr nagar, Hyderabad, Telangana, India</li>
+                 </ul>
+  
+             </div>
+          </div>
+        </div>
+       </div>
+        <script src="../../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>
